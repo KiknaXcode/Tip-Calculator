@@ -1,0 +1,235 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: #94dfe0;
+}
+
+img {
+  display: block;
+  margin: 50px auto 41px auto;
+}
+
+.main-container {
+  background-color: #ffffff;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px 25px 0px 0px;
+  margin: 0 auto;
+  width: 375px;
+  height: 790px;
+  border: 1px solid white;
+}
+
+/* ამ ნაწილში შედის bill, select tip და number of people,
+ვინაიდან დესკტობის ვერსიაზე ეს ნაწილი მთლიანად მმარცხნივ უნდა
+გადავიტანოთ, რასაც flex ის საშუალებით გავაკეთებთ*/
+
+.first-part {
+  width: 311px;
+  margin: 32px;
+}
+
+.bill-part {
+  width: 311px;
+}
+
+.number-people-part {
+  width: 311px;
+  margin-top: 50px;
+}
+
+label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+  display: block;
+  margin-bottom: 7px;
+}
+
+#zero-warning {
+  color: red;
+  float: right;
+  display: none;
+}
+
+.general-input {
+  width: 300px;
+  border: none;
+  padding: 3px;
+  text-align: right;
+  outline: none;
+  background-color: #f3f9fa;
+  height: 48px;
+  border-radius: 5px;
+  padding-right: 10px;
+  background-repeat: no-repeat;
+  background-position: top 50% left 20px;
+  color: #00474b;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#bill-input {
+  background-image: url("./images/icon-dollar.svg");
+}
+
+#number-people-input {
+  background-image: url("./images/icon-person.svg");
+}
+
+.select-tip-part {
+  display: grid;
+  grid-template-columns: repeat(2, 148px);
+  grid-template-rows: 48px 48px 48px;
+  grid-gap: 16px;
+  margin: 32px 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00474b;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active,
+.btn:hover {
+  background-color: #26c2ae;
+  color: #00474b;
+}
+
+#custom-div {
+  overflow: hidden;
+  border-radius: 5px;
+}
+#custom-input {
+  width: 100%;
+  height: 100%;
+  background-color: #f3f9fa;
+  text-align: right;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #547878;
+  border: none;
+  outline: none;
+  padding-right: 10px;
+}
+
+.second-part {
+  width: 327px;
+  height: 257px;
+  margin: 32px 24px;
+  background-color: #00474b;
+  color: white;
+  border-radius: 15px;
+  border: 1px solid #000000;
+}
+
+.amount-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 39px;
+}
+
+.amount-total > div > p:nth-child(1) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.amount-total > div > p:nth-child(2) {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+  color: #7f9d9f;
+}
+
+#tip-amount {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  text-align: right;
+  letter-spacing: -0.666667px;
+  color: #26c2ae;
+}
+
+#tip-total {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  text-align: right;
+  letter-spacing: -0.666667px;
+  color: #26c2ae;
+}
+
+.reset {
+  background-color: #26c2ae;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 24px;
+  width: 281px;
+  height: 48px;
+  margin: 35px auto;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1100px) {
+  .main-container {
+    width: 920px;
+    height: 520px;
+    display: flex;
+    border-radius: 25px;
+  }
+
+  .select-tip-part {
+    display: grid;
+    grid-template-columns: repeat(3, 117px);
+    grid-template-rows: 48px 48px;
+    grid-gap: 14px;
+    margin: 32px 0;
+  }
+
+  .first-part {
+    width: 380px;
+    margin: 48px;
+  }
+
+  .second-part {
+    width: 413px;
+    height: 434px;
+    margin: 32px;
+    background-color: #00474b;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid #000000;
+  }
+
+  .amount-total {
+    margin-top: 56px;
+  }
+
+  .reset {
+    margin-top: 122px;
+  }
+
+  #bill-input {
+    width: 365px;
+  }
+
+  #number-people-input {
+    width: 365px;
+  }
+}

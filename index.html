@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <img src="./images/logo.svg" />
+
+    <div class="main-container">
+      <!-- FIRST PART IN MAIN CONTAINER-->
+      <div class="first-part">
+        <!-- BILL PART-->
+        <div class="bill-part">
+          <label for="bill-input">Bill</label>
+          <input
+            id="bill-input"
+            class="general-input"
+            type="number"
+            placeholder="0"
+            min="1"
+          />
+        </div>
+        <!-- BILL PART-->
+
+        <!-- SELECT INPUT PART-->
+        <div class="select-tip-part">
+          <button class="btn" value="5">5%</button>
+          <button class="btn" value="10">10%</button>
+          <button class="btn active" value="15">15%</button>
+          <button class="btn" value="25">25%</button>
+          <button class="btn" value="50">50%</button>
+
+          <div id="custom-div">
+            <input placeholder="CUSTOM" type="number" id="custom-input" />
+          </div>
+        </div>
+
+        <!-- SELECT INPUT PART-->
+
+        <!-- NUMBER OF INPUT PART-->
+        <div class="number-people-part">
+          <label for="number-people-input"
+            >Number of People
+            <span id="zero-warning">Can't be zero</span></label
+          >
+          <input
+            id="number-people-input"
+            class="general-input"
+            type="number"
+            value="1"
+            min="1"
+          />
+        </div>
+        <!-- NUMBER OF INPUT PART-->
+      </div>
+      <!-- FIRST PART IN MAIN CONTAINER-->
+
+      <!-- SECOND PART IN MAIN CONTAINER-->
+      <div class="second-part">
+        <!--TIP AMOUNT-->
+        <div class="amount-total">
+          <div>
+            <p>Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <div id="tip-amount">$ 0.00</div>
+        </div>
+        <!--TIP AMOUNT-->
+
+        <!--TIP TOTAL-->
+        <div class="amount-total">
+          <div>
+            <p>Total</p>
+            <p>/ person</p>
+          </div>
+          <div id="tip-total">$ 0.00</div>
+        </div>
+
+        <!--TIP TOTAL-->
+
+        <!--RESET-->
+        <div class="reset">RESET</div>
+        <!--RESET-->
+      </div>
+      <!-- SECOND PART IN MAIN CONTAINER-->
+    </div>
+
+    <script src="dom.js"></script>
+  </body>
+</html>
